@@ -21,7 +21,7 @@ public class Lec03HotPublish {
 
         // conséquence du fonctionnement de refCount
         // si le subscriber précédent a fini de lire les données, alors ce subscriber va lire
-        // les données depuis ld début (comme un cold publisher)
+        // les données depuis le début (comme un cold publisher)
         movieStream.subscribe(Util.subscriber("mike"));
 
         Util.sleepSeconds(10);
